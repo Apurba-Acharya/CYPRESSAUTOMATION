@@ -32,6 +32,22 @@ tag class attribute  -> tag.class[attribute = 'value']
 4. navigate to supports >> e2e.js >> require ('cypress-xpath')
 ![alt text](image-2.png)
 
-=> To call Cypress commands : navigate to supports >> commands.js >> /// <reference types = "Cypress" /> 
+=> To call Cypress commands : 
+1. navigate to supports >> commands.js >> /// <reference types = "Cypress" /> 
 ![alt text](image.png)
+2. Create jsconfig.json >> 
+{
+    "include": ["./node_modules/cypress", "cypress/**/*.js"]
+}
+![alt text](image-3.png)
+
+Cypress Assertions : 
+1. Imlicit assertions / Default / Build-in assertions
+A. should
+B. and
+> Important : eq, contain, include, exist, have.length, have.value
+
+2. Explicit assertions
+A. expect - BDD approach framework
+B. assert - TDD approach framework
 
