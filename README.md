@@ -35,6 +35,3 @@ tag class attribute  -> tag.class[attribute = 'value']
 => To call Cypress commands : navigate to supports >> commands.js >> /// <reference types = "Cypress" /> 
 ![alt text](image.png)
 
-
-
-
