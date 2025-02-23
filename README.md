@@ -28,10 +28,12 @@ tag class attribute  -> tag.class[attribute = 'value']
 1. npm i cypress-xpath 
 2. npm install -D cypress-xpath
 3. navigate to supports >> commands.js >> /// <reference types="cypress-xpath"/>
+![alt text](image-1.png)
 4. navigate to supports >> e2e.js >> require ('cypress-xpath')
+![alt text](image-2.png)
 
 => To call Cypress commands : navigate to supports >> commands.js >> /// <reference types = "Cypress" /> 
-
+![alt text](image.png)
 
 
 
