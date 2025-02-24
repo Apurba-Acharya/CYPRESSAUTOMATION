@@ -51,3 +51,24 @@ B. and
 A. expect - BDD approach framework
 B. assert - TDD approach framework
 
+
+=> Cypress folder structure :
+1. cypress >> dowanloads : we can store all dowanloaded files
+
+2. cypress >> e2e : Main folder where we will write all specifications files
+
+3. cypress >> fixtures : Is is use to create any static test data in .json format
+
+4. cypress >> screenshorts : Capture screenshorts through your automation
+
+5. cypress >> support : This basically contain reuseable script
+A. commands.js : We can store or we can create customs commands. Or we can override existing commands.
+B. e2e.js : This file contains some code which will load before starting your spec files
+
+6. node_modules : Contain all cypress related module
+
+7. cypress.config.js : This file contain cypress related configuration
+
+8. package.json : This file contain dependencies
+
+

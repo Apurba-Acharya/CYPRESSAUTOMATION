@@ -1,6 +1,3 @@
-// const { expect } = require("chai");
-// const { describe } = require("mocha");
-
 describe ('my_firsttest_1', () => // "() =>" or function () both are equal
 {
     it ('verify_title - positive', () =>
