@@ -72,3 +72,8 @@ B. e2e.js : This file contains some code which will load before starting your sp
 8. package.json : This file contain dependencies
 
 
+=> Install iframe plugin : npm install -D cypress-iframe
+
+
+
+

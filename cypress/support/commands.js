@@ -27,4 +27,13 @@
 
 // <reference types = "Cypress" /> 
 
-/// <reference types="cypress-xpath"/> //For XPath
+//For XPath
+/// <reference types="cypress-xpath"/> 
+
+// Customize commands : Reusable purpose
+Cypress.Commands.add('getIframe', (iframe)=>{
+return cy.get("#mce_0_ifr") //iframe part
+.its('0.contentDocument.body') //document part
+.should('be.visible') //assertions part
+.then(cy.wrap);
+})
