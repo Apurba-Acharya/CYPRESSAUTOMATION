@@ -76,5 +76,5 @@ B. e2e.js : This file contains some code which will load before starting your sp
 
 => Install iframe drag and drop plugin : npm install --save-dev @4tw/cypress-drag-drop
 
-
+=> File upload plugin : npm install --save-dev cypress-file-upload
 
