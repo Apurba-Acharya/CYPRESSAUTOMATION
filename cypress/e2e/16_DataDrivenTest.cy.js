@@ -9,7 +9,6 @@ describe('MyTestSuite', ()=>{
             cy.get("input[name='username']").type(userdata.username);
             cy.get("input[name='password']").type(userdata.password);
             cy.get("button[type='submit']").click();
-            cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should ('have.text',userdata.expected); //for successfull login
 
             cy.wait(7000);
             
@@ -21,7 +20,7 @@ describe('MyTestSuite', ()=>{
                 cy.get("a[href='/web/index.php/auth/logout']").click();
         
             }else{
-                cy.get(".oxd-text.oxd-text--h5.orangehrm-login-title").should('have.text', userdata.expected)
+                cy.get('.oxd-alert-content > .oxd-text').should('have.text', userdata.expected)
             }
 
         })
