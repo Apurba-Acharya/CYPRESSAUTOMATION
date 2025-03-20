@@ -37,3 +37,29 @@ return cy.get("#mce_0_ifr") //iframe part
 .should('be.visible') //assertions part
 .then(cy.wrap);
 })
+
+
+
+// Custom commands for clicking on link using label
+Cypress.Commands.add('clickLink',(label)=>{
+    cy.get('a').contains(label).click();
+})
+
+//Over write contains()
+Cypress.Commands.overwriteQuery('contains',(originalFn, subject, filter, text, options = {})=>{
+    if(typeof text === 'object'){
+        options=text
+        text=filter
+        filter=undefined 
+    }
+    options.matchCase=false
+    return originalFn(subject, filter, text, options)
+})
+
+
+//Custom commands for login page: 
+Cypress.Commands.add("loginapp", (username,password)=>{
+        cy.get("input[name='username']").type(username);
+        cy.get("input[name='password']").type(password);
+        cy.get(".oxd-button.oxd-button--medium").click();
+})
