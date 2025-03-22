@@ -79,9 +79,9 @@ B. e2e.js : This file contains some code which will load before starting your sp
 => File upload plugin : npm install --save-dev cypress-file-upload
 
 => Generate MochaAwsome HTML reporter : 
-   1. Run in terminal : npm i --save-dev cypress-mochawesome-reporter
-   2. supports > e2e > paste this : import 'cypress-mochawesome-reporter/register'; 
-   3. paste below code format in cypress.config.js : 
+1. Run in terminal : npm i --save-dev cypress-mochawesome-reporter
+2. supports > e2e > paste this : import 'cypress-mochawesome-reporter/register'; 
+3. paste below code format in cypress.config.js : 
         const { defineConfig } = require("cypress");
         module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter', // for html reports
@@ -94,8 +94,8 @@ B. e2e.js : This file contains some code which will load before starting your sp
     },
   },
 });
-    4. npx cypress run --spec "Relative path of file"
-    5. Report will be generate under reports/html folder > open index.html
+4. npx cypress run --spec "Relative path of file"
+5. Report will be generate under reports/html folder > open index.html
 
 
 
