@@ -28,18 +28,18 @@ tag class attribute  -> tag.class[attribute = 'value']
 1. npm i cypress-xpath 
 2. npm install -D cypress-xpath
 3. navigate to supports >> commands.js >> /// <reference types="cypress-xpath"/>
-![alt text](image-1.png)
+![alt text](ReferenceScreenshortsFolder/image-1.png)
 4. navigate to supports >> e2e.js >> require ('cypress-xpath')
-![alt text](image-2.png)
+![alt text](ReferenceScreenshortsFolder/image-2.png)
 
 => To call Cypress commands : 
 1. navigate to supports >> commands.js >> /// <reference types = "Cypress" /> 
-![alt text](image.png)
+![alt text](ReferenceScreenshortsFolder/image.png)
 2. Create jsconfig.json >> 
 {
     "include": ["./node_modules/cypress", "cypress/**/*.js"]
 }
-![alt text](image-3.png)
+![alt text](ReferenceScreenshortsFolder/image-3.png)
 
 Cypress Assertions : 
 1. Imlicit assertions / Default / Build-in assertions
@@ -81,6 +81,7 @@ B. e2e.js : This file contains some code which will load before starting your sp
 => Generate MochaAwsome HTML reporter : 
 1. Run in terminal : npm i --save-dev cypress-mochawesome-reporter
 2. supports > e2e > paste this : import 'cypress-mochawesome-reporter/register'; 
+![alt text](ReferenceScreenshortsFolder/image-5.png)
 3. paste below code format in cypress.config.js : 
         const { defineConfig } = require("cypress");
         module.exports = defineConfig({
@@ -94,6 +95,7 @@ B. e2e.js : This file contains some code which will load before starting your sp
     },
   },
 });
+![alt text](ReferenceScreenshortsFolder/image-4.png)
 4. npx cypress run --spec "Relative path of file" : by default test should be run in electron browser : headless
 5. Run the test in chrome browser : npx cypress run --spec "Relative path" --browser chrome : headless
 6. Run in headed mode : npx cypress run --headed --spec "Relative path" --browser chrome
