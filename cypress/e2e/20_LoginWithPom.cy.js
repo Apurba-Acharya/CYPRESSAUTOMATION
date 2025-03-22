@@ -1,4 +1,4 @@
-import Login from "../PageObject/LoginPage2_Modified.js" //import before using loginPage class
+import Login from "../PageObject(20_LoginWithPom)/LoginPage2_Modified.js" //import before using loginPage class
 
 describe('pom', () => {
 
