@@ -94,8 +94,13 @@ B. e2e.js : This file contains some code which will load before starting your sp
     },
   },
 });
-4. npx cypress run --spec "Relative path of file"
-5. Report will be generate under reports/html folder > open index.html
+4. npx cypress run --spec "Relative path of file" : by default test should be run in electron browser : headless
+5. Run the test in chrome browser : npx cypress run --spec "Relative path" --browser chrome : headless
+6. Run in headed mode : npx cypress run --headed --spec "Relative path" --browser chrome
+7. Report will be generate under reports/html folder > open index.html
+
+
+
 
 
 
