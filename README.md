@@ -52,7 +52,7 @@ A. expect - BDD approach framework
 B. assert - TDD approach framework
 
 
-=> Cypress folder structure :
+=> Cypress folder structure :![alt text](ReferenceScreenshortsFolder/image-6.png)
 1. cypress >> dowanloads : we can store all dowanloaded files
 
 2. cypress >> e2e : Main folder where we will write all specifications files
