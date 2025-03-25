@@ -1,6 +1,6 @@
 describe ("Check UI ELements", ()=>{
 
-    it ("Checking Radio Buttons", ()=>{
+    it.only("Checking Radio Buttons", ()=>{
 
         cy.visit ("https://testautomationpractice.blogspot.com/")
 

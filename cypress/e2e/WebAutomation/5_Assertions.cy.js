@@ -18,14 +18,12 @@ describe ('Assertions demo', ()=>{
         //Instead of use ".should()" multiple time we can write like :
         .and('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         .and('contain', 'orangehrm')
-
+  
         .and('not.eq', 'https://opensource-demo.greenhrmlive.com/web/index.php/auth/login')
         .and('not.contain', 'greenhrm')
 
 
-        cy.title().should('include', 'Orange')
-        .and('eq', 'OrangeHRM')
-        .and('contain', "HRM")
+        cy.title().should('include', 'Orange').and('eq', 'OrangeHRM').and('contain', "HRM")
 
 
         // Logo validation :
